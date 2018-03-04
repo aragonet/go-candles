@@ -35,7 +35,6 @@ func main() {
 			fmt.Printf("Response type not expected. Error: %v\n", err)
 			return
 		}
-		ioutil.WriteFile("data", bodyBytes, 0644)
 
 		gc.CreateChart(candlesData, gc.Options{
 			LinesChartColor:      color.RGBA{255, 255, 0, 255},
